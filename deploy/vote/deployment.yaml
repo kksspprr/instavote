@@ -11,12 +11,14 @@ spec:
   selector:
     matchLabels:
       app: vote
+      tier: front
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
         app: vote
+        tier: front
     spec:
       containers:
       - image: schoolofdevops/vote:v1
